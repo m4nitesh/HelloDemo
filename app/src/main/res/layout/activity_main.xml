@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="demo.hellodemo.MainActivity">
+
+
+    <RelativeLayout
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_movie"
+            android:inputType="text"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/search_btn" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_alignParentRight="true"
+            android:text="@string/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/holder_details_movie"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="11sp"
+                android:text="@string/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:textSize="15sp"
+                android:text="Nitesh Kumar"
+                android:background="#0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#fff"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="11sp"
+                android:text="@string/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_genre"
+                android:textSize="15sp"
+                android:text="Rock"
+                android:background="#0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#fff"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="11sp"
+                android:text="@string/release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:textSize="15sp"
+                android:text="Nitesh Kumar"
+                android:background="#0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#fff"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="11sp"
+                android:text="@string/plot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_plot"
+                android:textSize="15sp"
+                android:text="Nitesh Kumar"
+                android:background="#0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="11sp"
+                android:text="@string/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_rating"
+                android:textSize="15sp"
+                android:text="Nitesh Kumar"
+                android:background="#0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_error"
+        android:textSize="24sp"
+        android:text="@string/sorry_no_movie_found"
+        android:gravity="center"
+        android:textColor="#840f0f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
